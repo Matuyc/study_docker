@@ -6,8 +6,6 @@ services:
          - "9000:9000"
         environment:
             ENV: DEV
-        volumes:
-         - ./app:/app
         links:
          - dnmonster
          - redis
