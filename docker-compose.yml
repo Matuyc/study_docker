@@ -1,8 +1,9 @@
 services:
     identidock:
-        build: .
+        image: matuyc/identidock:newest
         ports: 
          - "5000:5000"
+         - "9000:9000"
         environment:
             ENV: DEV
         volumes:
